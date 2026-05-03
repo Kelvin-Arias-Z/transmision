@@ -1,124 +1,18 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Transmisión Prioritaria</title>
+<div class="card">
+  <h1>Feliz Día de la Madre ❤️</h1>
 
-    <!-- Tipografía máquina de escribir -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
+  <!-- 👇 AQUÍ VA LA FOTO -->
+  <img src="foto.jpg" style="width:100%; border-radius:10px; margin-bottom:15px;">
 
-    <style>
-      body {
-        margin: 0;
-        height: 100vh;
-        background: linear-gradient(180deg, #000000, #020202, #001a00);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Share Tech Mono", monospace;
-        color: #39ff14;
-      }
+  <div class="message">
+    Mamá, mira esto con calma…  
+    hay algo muy especial aquí.  
+    Todo lo que viene tiene mucho de lo que tú me enseñaste.
+  </div>
 
-      #container {
-        border: 2px solid #39ff14;
-        padding: 30px;
-        width: 90%;
-        max-width: 420px;
-        text-align: center;
-        border-radius: 12px;
+  <button onclick="mostrarSorpresa()">Ver sorpresa</button>
 
-        box-shadow:
-          0 0 10px #39ff14,
-          0 0 20px #39ff14,
-          inset 0 0 15px #39ff14;
-
-        background: rgba(0, 0, 0, 0.85);
-      }
-
-      #message {
-        font-size: 18px;
-        min-height: 90px;
-        margin-bottom: 25px;
-
-        text-shadow:
-          0 0 5px #39ff14,
-          0 0 10px #39ff14;
-      }
-
-      #skullButton {
-        background: transparent;
-        border: 2px solid #39ff14;
-        padding: 12px;
-        border-radius: 10px;
-        cursor: pointer;
-
-        box-shadow:
-          0 0 10px #39ff14,
-          inset 0 0 10px #39ff14;
-
-        transition: 0.2s;
-      }
-
-      #skullButton:hover {
-        transform: scale(1.1);
-      }
-
-      #skullImage {
-        width: 70px;
-        height: 70px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="container">
-      <div id="message">Presiona ok para iniciar la transmisión</div>
-
-      <button id="skullButton" onclick="nextMessage()">
-        <!-- CAMBIA ESTA IMAGEN DESPUÉS -->
-        <img id="skullImage" src="calavera.png" alt="calavera" />
-      </button>
-    </div>
-
-    <script>
-      const messages = [
-        "+++ TRANSMISIÓN PRIORITARIA GUARDA EL SECRETO+++",
-
-        "Detectando nueva vida en el sistema...",
-
-        "Estado actual: En gestación",
-
-        "Fecha estimada de despliegue: DIC 42026",
-
-        "",
-
-        "Asignando nuevo rol...",
-
-        "",
-
-        ">>> ACTIVANDO PROTOCOLO: TÍO <<<",
-
-        "",
-
-        "Prepárate para tu nueva misión.",
-
-        "",
-
-        "Vas a ser tío.",
-      ];
-
-      let index = 0;
-
-      function nextMessage() {
-        if (index < messages.length) {
-          document.getElementById("message").textContent = messages[index];
-
-          index++;
-        }
-      }
-    </script>
-  </body>
-</html>
+  <div id="sorpresa" class="hidden">
+    Creo que este será un nuevo comienzo para todos… 👶
+  </div>
+</div>
